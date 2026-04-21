@@ -153,6 +153,7 @@ def get_data():
 if page == "Dashboard":
 
     df = get_data()
+    df.columns = df.columns.astype(str)
     df.columns = df.columns.str.lower()
 
     # ===============================
