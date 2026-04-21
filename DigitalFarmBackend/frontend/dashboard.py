@@ -41,7 +41,7 @@ def load_accuracy():
         return None
 
 def load_model():
-    model_path = os.path.join(os.getcwd(), "model.pkl")
+    model_path = "model.pkl"
     return joblib.load(model_path)
 
 model = load_model()
